@@ -23,7 +23,28 @@ const maps = new Map([   [123  ,   {name: 'chirag'}, ['thats my name']]  ]);
 
 const newPerson = new Map([[person1, 'asdjfasdfj']]);
 
+personData.set(person2, [{date: 'tomorrow', price: 500}]); //to set a new entry
+
+
 console.log(personData);
 console.log(maps);
 console.log(newPerson);
+
+for(const entry of personData.entries()){
+    console.log(entry)
+}
+
+for(const [key , value] of personData){ //array destructor to pull out the keys & values seperately
+    console.log(key);
+    console.log(value)
+}
+
+for(const entry of personData.keys()){ //will access the keys only in the map
+    console.log(entry)
+}
+
+for(const value of personData.values()){ //will access the value only in the map
+    console.log(value)
+}
+
 
