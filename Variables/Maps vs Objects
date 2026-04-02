@@ -1,0 +1,12 @@
+Maps vs Objects
+
+Maps:
+-> Can use any values (and types) as keys
+-> better for large quantities of data
+-> better result for removing and adding key value pair frequently
+
+
+Objects:
+-> May use strings, numbers or symbols as keys
+-> good for small & medium size data
+-> Easier to create and with better performance
